@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AppCore\" />
+    <None Remove="Interfaces\" />
+    <None Remove="AppBL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppCore\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="AppBL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eSimpleBlob.Domain\eSimpleBlob.Domain.csproj" />
+  </ItemGroup>
+</Project>
