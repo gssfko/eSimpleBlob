@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Publish
-      run: dotnet publish eSimpleBlob.Api/eSimpleBlob.Api.csproj -c Release -o release — nologo
+      run: dotnet publish eSimpleBlob.sln -c Release -o release — nologo
