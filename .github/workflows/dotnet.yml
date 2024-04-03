@@ -35,9 +35,9 @@ jobs:
       with:
         name: Application_Artifact
         path: /home/runner/work/eSimpleBlob/eSimpleBlob/Release/
-    - name: Commit release to GitHub Pages
-      uses: leigholiver/commit-with-deploy-key@v1.0.4
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        source: Release
-        destination_repo: release
-        deploy_key: ${{ secrets.DEPLOY_KEY }}
+        branch: release
+        folder: Release
+        ssh-key: ${{ secrets.DEPLOY_KEY }}
