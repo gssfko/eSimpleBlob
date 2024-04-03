@@ -24,8 +24,5 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Upload Build Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: Application_Artifact
-        path: /home/runner/work/eSimpleBlob/release/
+    - name: Publish
+      run: dotnet publish -c Release --output ./Release
