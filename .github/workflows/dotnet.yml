@@ -36,3 +36,7 @@ jobs:
         path: /home/runner/work/eSimpleBlob/eSimpleBlob/Release/
     - name: Publish
       run: dotnet publish -c Release -o /var/www/sample-app
+    - name: Restart the app
+      run: |
+        export XDG_RUNTIME_DIR=/run/user/$(id -u)
+        systemctl --user restart sample-app.service
