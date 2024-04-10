@@ -42,3 +42,5 @@ jobs:
         branch: release
         folder: Release
         ssh-key: ${{ secrets.DEPLOY_KEY }}
+    - name: Publish
+      run: dotnet publish -c Release -o /var/www/sample-app
