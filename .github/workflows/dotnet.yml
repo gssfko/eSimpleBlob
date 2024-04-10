@@ -34,11 +34,5 @@ jobs:
       with:
         name: Application_Artifact
         path: /home/runner/work/eSimpleBlob/eSimpleBlob/Release/
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        branch: release
-        folder: Release
-        ssh-key: ${{ secrets.DEPLOY_KEY }}
     - name: Publish
       run: dotnet publish -c Release -o /var/www/sample-app
