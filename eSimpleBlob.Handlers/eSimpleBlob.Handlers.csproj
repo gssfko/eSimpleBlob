@@ -10,6 +10,8 @@
     <None Remove="MediatR" />
     <None Remove="Requests\" />
     <None Remove="RequestHandlers\" />
+    <None Remove="RequestHandlers\Session\" />
+    <None Remove="Requests\Session\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.2.0" />
@@ -17,6 +19,8 @@
   <ItemGroup>
     <Folder Include="Requests\" />
     <Folder Include="RequestHandlers\" />
+    <Folder Include="RequestHandlers\Session\" />
+    <Folder Include="Requests\Session\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\eSimpleBlob.BusinessLogic\eSimpleBlob.BusinessLogic.csproj" />
