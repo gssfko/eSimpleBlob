@@ -17,6 +17,9 @@ permissions:
 jobs:
   deploy:
     runs-on: self-hosted
+    strategy:
+      matrix:
+        dotnet: ["8.0.x"]
   build:
     runs-on: ubuntu-latest
     steps:
